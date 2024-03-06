@@ -1,4 +1,4 @@
-package com.lxy.moudletest
+package com.lxy.moduletest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
