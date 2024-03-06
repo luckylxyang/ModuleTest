@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.devtools.ksp")
+    id("therouter")
 }
 
 android {
@@ -63,6 +65,7 @@ dependencies {
 
     implementation(libs.androidx.room)
     annotationProcessor(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
 
     // compose
     implementation(platform(libs.compose.bom))
@@ -70,7 +73,6 @@ dependencies {
     implementation(libs.material3.compose)
     implementation(libs.ui.compose)
 
-    // Android Studio Preview support
     implementation(libs.ui.tooling.preview)
     debugImplementation(libs.ui.tooling)
 
@@ -82,4 +84,18 @@ dependencies {
     implementation(libs.runtime.livedata.compose)
     implementation(libs.activity.compose)
     implementation(libs.ui.graphics)
+
+    // TheRouter
+    implementation(libs.therouter)
+    ksp(libs.therouter.kapt)
+
+
+    implementation(libs.retrofit.core)
+    implementation(libs.okhttp.logging)
+
+    // 权限申请
+    implementation(libs.guolindev.permissionx)
+
+    // 图片加载
+    implementation(libs.glide)
 }
