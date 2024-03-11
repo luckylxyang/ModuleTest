@@ -18,3 +18,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ModuleTest"
 include(":app")
+include(":iMobile")

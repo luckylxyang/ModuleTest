@@ -35,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    viewBinding {
+        enable = true
+    }
     buildFeatures {
         compose = true
     }
@@ -45,6 +48,8 @@ android {
 }
 
 dependencies {
+
+    implementation(project(":iMobile"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

@@ -82,3 +82,4 @@ android-application = { id = "com.android.application", version.ref = "androidAp
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 therouter = { id = "cn.therouter.agp8", version.ref = "theRouter" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+com-android-library = { id = "com.android.library", version.ref = "androidApplication" }

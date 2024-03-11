@@ -4,4 +4,5 @@ plugins {
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.ksp) apply false
     alias(libs.plugins.therouter) apply false
+    alias(libs.plugins.com.android.library) apply false
 }

@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "path": "map",
+    "className": "com.dist.imobile.MapActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  }
+]
